@@ -1,23 +1,35 @@
+package logic
+
+import (
+	"fmt"
+)
+
+var memory int
 
 // holdValue must be declare on memory
-func Rotation() (holdValue int, target string) {
+func Rotation(f []string) (t string) {
+  fmt.Print("Rotate")
 	var targetIndex int
 	
-	for i, s := range shikais {
+	for i, s := range f {
 		
-		if  i < 7 && holdValue < i {
+		if  i < len(f) && memory < i {
 			targetIndex = i
-			target = s
+			t = s
 			break
 		}
 
-		if holdValue == 6 {
+		if memory == 6 {
 			targetIndex = 0
-			target = shikais[0]
+			t = f[0]
 		}
 
 	}
 	
-	holdValue = targetIndex
+	memory = targetIndex
 	return
+}
+
+func GetMemory() (m int) {
+	return memory
 }
