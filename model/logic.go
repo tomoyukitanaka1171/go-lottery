@@ -1,0 +1,2 @@
+
+type Logic struct {}
