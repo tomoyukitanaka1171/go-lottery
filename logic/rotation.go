@@ -1,14 +1,9 @@
 package logic
 
-import (
-	"fmt"
-)
-
 var memory int
 
 // holdValue must be declare on memory
 func Rotation(f []string) (t string) {
-  fmt.Print("Rotate")
 	var targetIndex int
 	
 	for i, s := range f {

@@ -7,7 +7,6 @@ import (
 	"bufio"
 	"os"
 	"encoding/json"
-	// "io/ioutil"
 
 	"go-lottery/model"
 	"go-lottery/logic"
@@ -24,8 +23,6 @@ func main() {
 	scanner := bufio.NewScanner(os.Stdin)
 	
 	for i := 0;; i++ {
-		fmt.Print("num: %s", i)
-
 		scanner.Scan()
 
 		in := scanner.Text()
@@ -35,7 +32,7 @@ func main() {
 			goto Exit
 		default:
 			logic.Rotation(facilitatorName)
-			fmt.Print(facilitatorName[logic.GetMemory()])
+			fmt.Printf("%[1]d : %[2]s", i, facilitatorName[logic.GetMemory()])
 		}
 	}
 	Exit:
