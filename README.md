@@ -4,8 +4,9 @@
 This is hopeless package. But I just wanna make.
 This can be very useful when you want to have a rotating chairperson or various other responsibilities.
 
+I conveniently named facilitator.
+
 You say you don't get that chance very often?
-umm,,,,,,,
 
 ## How to use?
 
